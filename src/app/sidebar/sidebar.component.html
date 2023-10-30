@@ -1,0 +1,13 @@
+<!--side bar-->
+<div class="bg-dar border-right p-3" id="sidebar">
+  <h3 class="text-light">Gif-App
+  </h3>
+  <hr class="text-white" />
+  <div class="list-group list-reset">
+    <a  *ngFor="let elemento of historial"  href="#" class="list-group-item list-group-item-action">
+      {{elemento| titlecase}}
+    </a>
+  </div>
+</div>
+<!--shares, se puede acceder desde toda la aplicacion -->
+<!--end side bar-->
