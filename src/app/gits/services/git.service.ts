@@ -33,7 +33,7 @@ export class gitService {
         .set('api_key', this.api)
         .set('limit', '10')
         .set('q', query);
-      this.http.get<SearchGiftsResponse>(`${this._servicioUrl}/search`,{params})
+      this.http.get<SearchGiftsResponse>(`${this._servicioUrl}/search`, { params })
         .subscribe((resp) => {
           console.log(resp.data);
           this.resultados = resp.data;
