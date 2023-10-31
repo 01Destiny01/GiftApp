@@ -15,5 +15,9 @@ export class SidebarComponent {
  return this.serviciosgit.historial;
 
   }
+  buscar(elemento:string){
+    this.serviciosgit.buscarGif(elemento)
+
+  }
 
 }
